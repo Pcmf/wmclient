@@ -1,0 +1,112 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/out/2017, 22:11:02
+    Author     : AsusE2
+*/
+
+body{
+    /* This image will be displayed fullscreen */
+    /*background:url('../img/xadrex_red.png') no-repeat center center;*/
+    background-color: rgba(40,40,45,0.9);
+    background-position: center;
+    background-attachment: fixed; 
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
+
+    /* The Magic */
+    background-size:cover;
+    opacity: .9;
+    font-family: Lato; 
+}
+
+
+#lista p,h5{
+   /*color: blue;*/ 
+}
+
+html{
+    /* Workaround for some mobile browsers */
+    min-height:100%;
+}
+
+.mainview{
+    margin-top: 65px;
+}
+/* Paper were are to show product information */
+.paper{
+    font-family: Robot;
+    color: white;
+    background-color: rgba(0,0,0,.4);
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.thumbnail{
+    max-width: 100%;
+    min-height: 60px;
+}
+
+/* CSS para wellcome */
+
+#content{
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    color: white                
+}
+
+
+#content h1{
+    font-weight: 700;
+    font-size: 5em;
+}
+#content hr{
+  width: 300px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#flags{
+    margin-top: 2%;
+}
+.flags-md{
+    width: 60px;
+    height: 40px;
+}
+
+#cookieInfoMsg{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 25%;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    /*opacity: 0.5;*/
+    border: 1px solid black;
+}
+
+.contentor{
+    position: relative;
+    /*width: 100%;*/
+
+    margin: 5px 0 5px 0;
+        
+}
+.imagem{
+    position: relative;
+    width: 100%;
+    opacity: 0.9;
+}
+.texto{
+  z-index: 100;
+  position: relative;
+  top: 4px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}

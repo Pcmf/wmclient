@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+    <!--   MAIN  --->
+        <div class="container mainview">
+                <div ng-if="type ==1" class="col-xs-6 text-center contentor" ng-repeat="cat in cats">
+                        <a href="#/list/{{cat.id}}"> 
+                            <img class="imagem img-responsive img-rounded" ng-src="../WMbackoffice/img/{{cat.folder}}/{{cat.img}}" style="max-height: 100px"/>
+                        </a>
+                        <p class="texto">{{cat.catj[LG]}}</p>
+                </div>
+            
+                <div ng-if="type ==2" class="col-xs-12 text-center" ng-repeat="cat in cats">
+                    <div class="thumbnail">{{cat.catj[LG]}}
+                        <a href="#/list/{{cat.id}}"> 
+                             <img ng-src="../WMbackoffice/img/{{cat.folder}}/{{cat.img}}"/>
+                        </a>
+                    </div>
+                </div>
+        </div>
+
+    
+ <!--                   <div ng-if="type ==1" class="col-xs-6 text-center" ng-repeat="cat in cats">
+                    <div class="thumbnail">{{cat.catj[LG]}}
+                        <a href="#/list/{{cat.id}}"> 
+                            <img ng-src="../WMbackoffice/img/{{cat.folder}}/{{cat.img}}" style="max-height: 100px"/>
+                        </a>
+                    </div>
+                </div>  -->

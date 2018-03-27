@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="content">
+                <h1>Web Menu</h1>
+                <h3>The smart choice!</h3>
+                <hr/>
+
+            <!-- Os botões serão criados dinamicamente com o idioma selecionado, caso não haja um cookie com idioma -->
+                <ul ng-show="showLangs" id="flags" ng-repeat="lang in langs">
+                    <li class="btn btn-default" ng-click="selectLang(lang.sgl)">
+                    <img class="flags-md" ng-src="../WMSite/img/flags/{{lang.flag}}" >
+                    </li>
+                </ul>
+            </div>
+            <div id="cookieInfoMsg" class="panel" ng-show="cookieInfoShow">
+                    <P>Este site usa cookies para melhorar as funcionalidades.</P>
+            </div>
+        </div>
+    </div>
+</div>

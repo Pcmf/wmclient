@@ -1,0 +1,22 @@
+<!--
+Item detail 
+Bigger picture and more information.
+TODO - more interactivity like share, comment and show other people comments
+-->
+
+<div class="container" style="margin-top: 80px;">
+    <div class="text-center">
+        <img ng-src="../WMbackoffice/img/{{p.folder}}/{{p.photo}}" alt=""/>
+    </div>
+    <h4 class="text-center">{{p.name[LG]}}</h4>
+    <div class="paper">
+    <p>{{p.description[LG]}}</p>
+    <h3>{{p.price}} €</h3>
+    </div>
+    <hr/>
+    <div class="paper">
+        <label>Comentarios:</label>
+        <p>Comentario numero um</p>
+        <p>Comentario numero dois mais algum texto.</p>
+    </div>
+</div>
